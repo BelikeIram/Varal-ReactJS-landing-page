@@ -1,0 +1,11 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+.footer .footer-text{
+    display: flex;
+    align-items: center;
+    color: rgb(165, 164, 164);
+    font-weight: 700;
+}

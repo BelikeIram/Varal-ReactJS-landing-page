@@ -1,0 +1,233 @@
+.Hero-section{
+    margin-top: 3vw;
+}
+.input-box{
+    right: 101px;
+    z-index: 9;
+}
+::placeholder{
+    color: var(--Cbg);
+    font-size: capitalize;
+}
+.input-box .field{
+    width: 270px;
+    position: relative;
+    border: 1px solid blue;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+}
+.field .search-icon{
+    margin-left: .5vw;
+    font-size: 28px;
+    color: blue;
+}
+.field input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.hero-parts{
+    display: flex;
+    position: relative;
+}
+.bubble{
+    position: absolute;
+}
+.bubble-1{
+    width: 20px;
+    left: 150px;
+    top: 5%;
+    opacity: 0.5;
+}
+.bubble-2{
+    right: 36%;
+    top: 6%;
+}
+.hero-parts .left-hero{
+    width: 50%;
+    margin-top: 48px;
+}
+.left-hero .claim, .com{
+    color: var(--Cbg);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.left-hero h1{
+    margin-top: 8px;
+    font-weight: 800;
+    font-family: BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    line-height: 46px;
+}
+.left-hero h1 .underlined{
+    border-bottom: 5px solid orange;
+}
+ .hero-para{
+    max-width: 70%;
+    line-height: 27px;
+    color: gray;
+    font-weight: 900;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+ .btns{
+    height: 55px;
+    display: flex;
+    border-radius: 3px;
+    border: 1px solid var(--Cbg);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.btns .btn{
+    font-size: 1.1rem;
+    font-weight: 800;
+    height: 100%;
+    line-height: 51px;
+    padding-left: 8px;
+    width: 50%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    cursor: pointer;
+    color: var(--Cbg);
+}
+.btns .btn.active{
+    background:var( --Cbg );
+    color: white;
+}
+
+.right-hero{
+    width: 50%;
+    object-fit: cover;
+    object-position: 70%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+.right-hero img{
+    width: 90%;
+    height: 87%;
+    object-fit: cover;
+}
+.hero-parts-mob{
+    display: none;
+
+}
+.hero-parts-mob .left-hero-mob{
+    width: 100%;
+    margin-top: 48px;
+}
+.hero-para-mob{
+    color: gray;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+ .left-hero-mob h1{
+    margin-top: 8px;
+    font-weight: 900;
+    font-family: BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    line-height: 46px;
+}
+.left-hero-mob h1 .underlined{
+    border-bottom: 5px solid orange;
+}
+.left-hero-mob .claim, .com{
+    color: var(--Cbg);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.right-hero-mob img{
+    width: 100%;
+}
+
+@media (min-width:1200px){
+    .btns{
+        width: 60%;
+    }
+}
+@media (min-width:900px) {
+    .left-hero h1{
+        width: 24rem;
+    }
+    .btns{
+        min-width: 60%;
+    }
+    .btns .btn{
+        font-size: 1rem;
+    }
+}
+@media (max-width:850px)and (min-width:650px){
+    .btns{
+        width: 416px;
+    }
+}
+@media(min-width:650px){
+    .input-box{
+        position: absolute;
+    }
+}
+@media (max-width:650px){
+    .btns{
+        width: 99%;
+    }
+    .btns .btn{
+        font-size: 0.9rem;
+    }
+    .hero-parts{
+        display: none;
+    }
+    .hero-parts-mob{
+        display: block;
+    }
+    .input-box{
+        width: 100%;
+    }
+    .input-box .field{
+    width: 99%;
+    position: relative;
+    border: 1px solid blue;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    }
+    ::placeholder{
+       font-size: 1.2rem;
+    }
+    .field .search-icon{
+        font-size: 25px;
+        margin-left: 2vw;
+    }
+    .field input{
+        height: 100%;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    width: 100%;
+    }
+    
+}
+
+@media (max-width:515px){
+    .btns{
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    border: none;
+    border-radius: 0px;
+    }
+    
+    .btns .btn{
+        width: 95%;
+        border: 1px solid var(--Cbg);
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-radius: 3px;
+    }
+}

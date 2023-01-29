@@ -1,0 +1,11 @@
+.parent{
+  overflow: hidden;
+  margin: 0 100px
+}
+
+@media (max-width:500px){
+  .parent{
+    margin: 0px 50px;
+  }
+}
+

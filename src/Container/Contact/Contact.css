@@ -1,0 +1,168 @@
+.contact{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ft-box{
+    width: 60%;
+    margin-top: 32px;
+}
+.ft-box a.title{
+    color:black;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+.ft-box a{
+    display: block;
+    text-decoration: none;
+    color: #575555;
+    padding-bottom: 2px;
+}
+.ft-box p{
+    margin: 0 0 10px 0;
+}
+
+.input{
+    position: relative;
+    margin-left: 2px;
+    height: 36px;
+    background: #d3d3d373;
+}
+.input input[type='text']{
+    width: 80%;
+    height: 100%;
+    background: transparent;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+}
+.input .btn{
+    position: absolute;
+    width: 32px;
+    height: 36px;
+    top: 0;
+    right: 0;
+}
+.btn img{
+    width: 100%;
+    height: 100%;
+}
+.social-media{
+    width: 55%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.social-media a{
+    margin-right: 15px;
+    width: 15px;
+}
+.social-media a img{
+    width: 25px;
+}
+.contact-mob{
+    display: none;
+}
+.left-con .subs{
+    color: black;
+    font-weight: 800;
+}
+
+@media (max-width:650px){
+    .blog{
+        width: 100%;
+        padding-left: 6vw;
+    }
+    .about-us{
+        display: block;
+    }
+    .above-blog{
+        width: 100%;
+    }
+    .header{
+        width: 65%;
+        font-size: 1.2rem;
+    }
+  .above-blog .how-to{
+    width: 80%;
+    padding-left: 10px;
+  }
+  .how-to .vector-img{
+    width: 82px;
+    height: 65px
+  }
+  .how-to .blog-abt{
+      width: 100%;
+  }
+  .blog-abt .title{
+    font-size: .9rem;
+    font-weight: bold;
+  }
+  .blog-abt span{
+    font-size: 1rem;
+    color: blue;
+  }
+  .above-blog .how-to:last-child{
+      display: none;
+  }
+  .above-review{
+      width: 100%;
+  }
+  .above-review .profile-box{
+    width: 50px;
+    height: 50px;
+  }
+  .profile-box img{
+    margin-left: 7px;
+    margin-top: 7px;
+    width: 36px;
+  }
+  .above-review p{
+    font-size: 1.2rem;
+    color: #242323;
+  }
+    .contact{
+        display: none;
+    }
+    .ft-box {
+        width: 100%;
+    }
+    .ft-box a{
+        font-size: 0.9rem;
+        color: #575555;
+    }
+    .ft-box p{
+        color: gray;
+        font-size: 0.9rem;
+    }
+    .contact-mob{
+        display: flex;
+    }
+    .contact-mob .left-con{
+        width: 50%;
+    }
+    .contact-mob .right-con{
+        width: 50%;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .input input[type='text']{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:500px){
+    .social-media a{
+        margin: 0;
+    }
+    .social-media a img{
+        width: 18px;
+    }
+    ::placeholder{
+        font-size: 0.8rem;
+    }
+}
